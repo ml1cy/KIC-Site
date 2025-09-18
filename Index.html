@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalamazoo Islamic Center</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="text-gray-800 bg-gray-50">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="index.html" class="flex items-center space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0d9488" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-moon-star"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/><path d="M19 3v4"/><path d="M21 5h-4"/></svg>
+                    <span class="text-xl font-bold text-gray-800">Kalamazoo Islamic Center</span>
+                </a>
+                <nav class="hidden md:flex items-baseline space-x-6">
+                    <a href="index.html" class="nav-link text-teal-700 font-bold">Home</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="services.html" class="nav-link">Services</a>
+                    <a href="events.html" class="nav-link">Events</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                    <a href="donate.html" class="nav-link">Donate</a>
+                </nav>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="p-2 text-gray-700 hover:text-teal-700">
+                        <i data-lucide="menu" class="h-6 w-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white">
+            <a href="index.html" class="mobile-link active">Home</a>
+            <a href="about.html" class="mobile-link">About</a>
+            <a href="services.html" class="mobile-link">Services</a>
+            <a href="events.html" class="mobile-link">Events</a>
+            <a href="contact.html" class="mobile-link">Contact</a>
+            <a href="donate.html" class="mobile-link">Donate</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="text-center bg-teal-600 text-white" style="background-image: url('https://placehold.co/1200x450/0d9488/ffffff?text=Kalamazoo+Islamic+Center'); background-size: cover; background-position: center;">
+             <div class="bg-black bg-opacity-50 py-24 px-4">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">As-salamu alaykum</h1>
+                <p class="text-lg md:text-xl max-w-3xl mx-auto">Welcome to the Kalamazoo Islamic Center, a place for worship, community, and education. We are dedicated to serving the spiritual and social needs of the Muslim community in Kalamazoo.</p>
+            </div>
+        </section>
+        
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+             <!-- Prayer Times & Announcements Grid -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- Prayer Times Card -->
+                <div class="lg:col-span-1 card p-6">
+                    <h2 class="card-title"><i data-lucide="clock" class="mr-2 h-6 w-6"></i> Prayer Times</h2>
+                    <p class="text-sm text-gray-500 mb-4">Note: Iqama times change. Please check the notice board at KIC.</p>
+                    <div class="space-y-3 text-lg">
+                        <div class="grid grid-cols-3 items-center border-b pb-2 text-center">
+                            <span class="font-semibold text-left">Prayer</span><span class="font-semibold">Adhan</span><span class="font-semibold">Iqama</span>
+                        </div>
+                        <div class="grid grid-cols-3 items-center border-b pb-2 text-center">
+                            <span class="text-left">Fajr</span> <span>5:15 AM</span> <span>5:45 AM</span>
+                        </div>
+                         <div class="grid grid-cols-3 items-center border-b pb-2 text-center">
+                            <span class="text-left">Dhuhr</span> <span>1:30 PM</span> <span>1:45 PM</span>
+                        </div>
+                         <div class="grid grid-cols-3 items-center border-b pb-2 text-center">
+                            <span class="text-left">Asr</span> <span>5:15 PM</span> <span>5:30 PM</span>
+                        </div>
+                         <div class="grid grid-cols-3 items-center border-b pb-2 text-center">
+                            <span class="text-left">Maghrib</span> <span>8:30 PM</span> <span>8:35 PM</span>
+                        </div>
+                         <div class="grid grid-cols-3 items-center text-center">
+                            <span class="text-left">Isha</span> <span>10:00 PM</span> <span>10:15 PM</span>
+                        </div>
+                    </div>
+                    <p class="text-center font-semibold text-gray-700 mt-4 pt-4 border-t">Jumu'ah Prayer: 1:30 PM</p>
+                </div>
+
+                <!-- Announcements Card -->
+                <div class="lg:col-span-2 card p-6">
+                    <h2 class="card-title"><i data-lucide="megaphone" class="mr-2 h-6 w-6"></i> Announcements</h2>
+                    <div class="space-y-4">
+                        <div class="announcement">
+                            <h3 class="font-semibold">Community Potluck Dinner</h3>
+                            <p class="text-gray-600">Join us this Friday after Isha prayer for a community potluck. Please bring a dish to share. All are welcome!</p>
+                        </div>
+                        <div class="announcement">
+                            <h3 class="font-semibold">Weekend School Registration</h3>
+                            <p class="text-gray-600">Registration for the upcoming weekend Islamic school semester is now open. Register online or at the KIC office.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white mt-12">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center">
+            <p class="font-semibold text-lg">Kalamazoo Islamic Center</p>
+            <p class="text-gray-400">3501 W. Main Street, Kalamazoo, MI 49006</p>
+            <p class="text-gray-400 mt-2">&copy; <span id="footer-year"></span> Kalamazoo Islamic Center. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
